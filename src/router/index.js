@@ -11,10 +11,10 @@ let routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/contacts',
+    name: 'Contacts',
     // lazy loading component
-    component: () => import('../views/About.vue')
+    component: () => import('src/views/Contacts.vue')
   },
   {
     path: '/auth',
@@ -25,6 +25,11 @@ let routes = [
     path: '/reg',
     name: 'Registration',
     component: () => import('../views/Registration.vue')
+  },
+  {
+    path: '/modal',
+    name: 'Modal',
+    component: () => import('../views/Modal.vue')
   }
 ];
 

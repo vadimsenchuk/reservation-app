@@ -1,14 +1,17 @@
 import Vue from 'vue';
 import App from './App.vue';
+
 import fb from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
 import 'firebase/storage';
+
 import ElementUI from 'element-ui';
 import Locale from 'element-ui/lib/locale/lang/en';
+import 'element-ui/lib/theme-chalk/index.css';
+
 import router from './router';
 import store from './store';
-import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.config.productionTip = false;
 

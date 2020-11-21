@@ -1,12 +1,12 @@
 <template>
   <div class="about">
-    <h1>This is an Authorisation page</h1>
+    <h1>This is an Modal page</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Authorisation'
+  name: 'Modal'
 };
 </script>
 
