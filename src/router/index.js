@@ -14,7 +14,7 @@ let routes = [
     path: '/contacts',
     name: 'Contacts',
     // lazy loading component
-    component: () => import('src/views/Contacts.vue')
+    component: () => import('../views/Contacts.vue')
   },
   {
     path: '/auth',
