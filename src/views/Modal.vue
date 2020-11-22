@@ -1,12 +1,12 @@
 <template>
-  <div class="home">
-    <h1>This is Home page</h1>
+  <div class="about">
+    <h1>This is an Modal page</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Modal'
 };
 </script>
 
