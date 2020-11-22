@@ -10,12 +10,21 @@ import ElementUI from 'element-ui';
 import Locale from 'element-ui/lib/locale/lang/en';
 import 'element-ui/lib/theme-chalk/index.css';
 
+import 'reset-css';
+
 import router from './router';
 import store from './store';
 
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI, { Locale });
+
+
+Vue.mixin({
+  filters: {
+    bgrImage: url => `background-image: url(${url})`
+  }
+})
 
 new Vue({
   router,
