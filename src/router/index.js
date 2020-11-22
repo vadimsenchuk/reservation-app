@@ -27,9 +27,19 @@ let routes = [
     component: () => import('../views/Registration.vue')
   },
   {
-    path: '/modal',
-    name: 'Modal',
-    component: () => import('../views/Modal.vue')
+    path: '/profile',
+    name: 'Profile',
+    component: () => import('../views/Profile.vue')
+  },
+  {
+    path: '/politics',
+    name: 'Politics',
+    component: () => import('../views/Politics.vue')
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: () => import('../views/Search.vue')
   }
 ];
 
