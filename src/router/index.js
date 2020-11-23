@@ -1,25 +1,50 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import About from "../views/About.vue";
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
 
-const routes = [
+let routes = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    component: About
+    path: '/contacts',
+    name: 'Contacts',
+    // lazy loading component
+    component: () => import('../views/Contacts.vue')
+  },
+  {
+    path: '/auth',
+    name: 'Authorisation',
+    component: () => import('../views/Authorisation.vue')
+  },
+  {
+    path: '/reg',
+    name: 'Registration',
+    component: () => import('../views/Registration.vue')
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: () => import('../views/Profile.vue')
+  },
+  {
+    path: '/politics',
+    name: 'Politics',
+    component: () => import('../views/Politics.vue')
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: () => import('../views/Search.vue')
   }
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 });
