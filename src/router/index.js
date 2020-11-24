@@ -11,14 +11,9 @@ let routes = [
     component: Home
   },
   {
-    path: '/contacts',
-    name: 'Contacts',
-    // lazy loading component
-    component: () => import('../views/Contacts.vue')
-  },
-  {
     path: '/auth',
     name: 'Authorisation',
+    // lazy loading component
     component: () => import('../views/Authorisation.vue')
   },
   {
@@ -27,9 +22,29 @@ let routes = [
     component: () => import('../views/Registration.vue')
   },
   {
-    path: '/modal',
-    name: 'Modal',
-    component: () => import('../views/Modal.vue')
+    path: '/company',
+    name: 'Company',
+    component: () => import('../views/Company.vue')
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: () => import('../views/Profile.vue')
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: () => import('../views/Search.vue')
+  },
+  {
+    path: '/contacts',
+    name: 'Contacts',
+    component: () => import('../views/Contacts.vue')
+  },
+  {
+    path: '/politics',
+    name: 'Politics',
+    component: () => import('../views/Politics.vue')
   }
 ];
 
